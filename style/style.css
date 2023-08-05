@@ -1,0 +1,364 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+
+    height: auto;
+}
+
+#logo img {
+
+    height: 60px;
+    margin: 5px 3px;
+
+    border-radius: 20px;
+
+}
+
+#navbar::before {
+    content: '';
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* width: 100%; */
+    z-index: -1;
+    opacity: .4;
+
+
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+    margin: 10px;
+
+}
+
+#navbar ul li a {
+    color: #fff;
+    display: block;
+    padding: 5px 30px;
+    border: 20px;
+    border-radius: 20px;
+    border: 2px red;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    /* padding: 3px 200px; */
+    height: 490px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: '';
+    background: url('../img/bg1.jpg') no-repeat center/cover;
+    position: absolute;
+    height: 60%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: .89;
+}
+
+#home h1 {
+    color: #fff;
+    text-align: center;
+}
+
+#client-section {
+    position: relative;
+    height: 344px;
+}
+
+#client-section::before {
+    content: '';
+    position: absolute;
+    background: url('../img/bg2.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 70%;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+
+#clients {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#client-item {
+    padding: 34px;
+
+}
+
+#clients img {
+    height: 124px;
+    padding: 10px;
+
+}
+
+.h-primary {
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+#home p {
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: #f2f2f2;
+}
+
+#services .box img {
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('../img/bg4.jpg') no-repeat center center/cover;
+
+
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    background: transparent;
+}
+
+#contact-box form {
+    width: 40%;
+
+
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'bree serif', serif;
+
+}
+
+/* #services{} */
+.h-primary {
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-size: 2.8rem;
+    padding: 12px;
+
+}
+
+.btn {
+    /* padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: #fff;
+    margin: 17px;
+    border-radius: 10px; */
+    display: inline-block;
+    padding: 10px;
+    color: crimson;
+    background-color: transparent;
+
+    border: 2px solid crimson;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3 ease;
+    transition-property: background-color, color;
+    border-radius: 35px;
+}
+
+.btn:hover {
+    /* padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: #fff;
+    margin: 17px;
+    border-radius: 10px; */
+
+    color: #000;
+    background-color: white;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
+
+.btn a {
+    text-decoration: none;
+    color: crimson;
+}
+
+/* this is stands for fooder links */
+
+.links {
+    background: #f2f2f2;
+    color: #616161;
+ }
+ .inner-links {
+     display: flex;
+     justify-content: space-around;
+     padding: 35px 0;
+   
+ }
+ .inner-links li {
+     line-height: 2rem;
+     list-style: none;
+ }
+
+ .links .inner-links ul li a {
+    text-decoration: none;
+    color: #616161;
+
+ }
+ .footer .inner-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 10px;
+}
+.footer .inner-footer ul {
+    display: flex;
+    list-style: none;
+ 
+}
+.footer .inner-footer ul li {
+    margin-right: 20px;
+
+
+}
+.footer .inner-footer ul li a {
+    text-decoration: none;
+    color: #616161; 
+}
+
+@media (max-width: 775px) {
+    .h-primary {
+        font-size: 2rem;
+    }
+
+    .fstpara {
+        display: none;
+        /* font-size: 10px !important; */
+    }
+
+    #home {
+        display: flex;
+        flex-direction: column;
+        /* padding: 3px 200px !important; */
+        height: 340px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    #home::before {
+        content: '';
+        background: url('../img/bg1.jpg') no-repeat center/cover;
+        position: absolute;
+        height: 40%;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+        opacity: .89;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #navbar ul li {
+        list-style: none;
+        font-size: 0.3rem;
+        margin: -9px;
+
+    }
+    .inner-links {
+        flex-wrap: wrap;
+      }
+      .footer .inner-footer {
+          flex-direction: column;
+      }
+      .footer .inner-footer ul {
+          flex-direction: column;
+          
+      }
+      .footer .inner-footer ul li {
+          padding: 30px;
+  
+      }
+}
